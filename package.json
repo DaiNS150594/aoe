@@ -1,0 +1,23 @@
+{
+  "name": "de-che-web",
+  "version": "1.0.0",
+  "description": "Đế Chế (Age of Empires I: Rise of Rome) remake chạy trên trình duyệt - Hill Country, multiplayer lockstep, luật D3KT",
+  "type": "module",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "node tests/rules.test.mjs && node tests/animals.test.mjs && node tests/map.test.mjs && node tests/assets.test.mjs && node tests/sim.test.mjs --min=20 --quiet",
+    "test:browser": "node tests/browser.mjs tests/shots play",
+    "test:aoe": "node tests/aoe-assets.mjs tests/shots-aoe"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "puppeteer-core": "^25.13.0"
+  }
+}

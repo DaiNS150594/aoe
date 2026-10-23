@@ -1,0 +1,5 @@
+node_modules/
+tests/shots/
+*.log
+# original Age of Empires files copied by tools/import-aoe.mjs (personal use only, do not publish)
+public/assets/aoe/
